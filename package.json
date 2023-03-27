@@ -1,9 +1,9 @@
 {
   "name": "create-de",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
-  "author": "",
+  "author": "Debbl <me@aiwna.run>(https://github.com/Debbl/)",
   "license": "ISC",
   "keywords": [],
   "main": "index.js",
@@ -18,7 +18,10 @@
   ],
   "scripts": {
     "dev": "unbuild && node index.js",
-    "build": "unbuild"
+    "build": "unbuild",
+    "publish": "changeset publish",
+    "changeset": "changeset",
+    "version": "changeset version"
   },
   "dependencies": {
     "kolorist": "^1.7.0",
@@ -26,6 +29,7 @@
     "prompts": "^2.4.2"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.1",
     "@debbl/eslint-config-prettier": "^0.0.36",
     "@debbl/eslint-config-ts": "^0.0.36",
     "@types/minimist": "^1.2.2",
