@@ -2,6 +2,7 @@
   "name": "create-de",
   "type": "module",
   "version": "0.0.2",
+  "packageManager": "pnpm@7.12.2",
   "description": "",
   "author": "Debbl <me@aiwna.run>(https://github.com/Debbl/)",
   "license": "ISC",
