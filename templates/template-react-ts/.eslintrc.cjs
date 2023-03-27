@@ -3,5 +3,5 @@
 const { defineConfig } = require("eslint-define-config");
 
 module.exports = defineConfig({
-  extends: ["@debbl/eslint-config-vue", "@debbl/eslint-config-prettier"],
+  extends: ["@debbl/eslint-config-react", "@debbl/eslint-config-prettier"],
 });

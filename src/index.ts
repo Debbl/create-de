@@ -2,7 +2,7 @@ import path from "node:path";
 import fs from "node:fs";
 import { fileURLToPath } from "node:url";
 import minimist from "minimist";
-import { blue, green, red, reset } from "kolorist";
+import { blue, cyan, green, red, reset } from "kolorist";
 import prompts from "prompts";
 import {
   copy,
@@ -36,6 +36,18 @@ const defaultTargetDir = "my-project";
 const cwd = process.cwd();
 
 const FRAMEWORKS: Framework[] = [
+  {
+    name: "react",
+    display: "React",
+    color: cyan,
+    variants: [
+      {
+        name: "react-ts",
+        display: "Typescript",
+        color: blue,
+      },
+    ],
+  },
   {
     name: "vue",
     display: "Vue",
