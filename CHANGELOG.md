@@ -1,5 +1,11 @@
 # create-de
 
+## 0.0.4
+
+### Patch Changes
+
+- add next-app-ts
+
 ## 0.0.3
 
 ### Patch Changes

@@ -2,7 +2,7 @@ import path from "node:path";
 import fs from "node:fs";
 import { fileURLToPath } from "node:url";
 import minimist from "minimist";
-import { blue, cyan, green, red, reset } from "kolorist";
+import { bgGray, blue, bold, cyan, dim, green, lightGray, red, reset } from "kolorist";
 import prompts from "prompts";
 import {
   copy,
@@ -45,6 +45,11 @@ const FRAMEWORKS: Framework[] = [
         name: "react-ts",
         display: "Typescript",
         color: blue,
+      },
+      {
+        name: "next-app-ts",
+        display: "Next-ts",
+        color: lightGray,
       },
     ],
   },
