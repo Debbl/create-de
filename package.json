@@ -8,7 +8,8 @@
   "keywords": [],
   "main": "index.js",
   "bin": {
-    "de": "index.js"
+    "create-de": "index.js",
+    "cda": "index.js"
   },
   "files": [
     "index.js",
@@ -16,6 +17,7 @@
     "dist"
   ],
   "scripts": {
+    "dev": "unbuild && node index.js",
     "build": "unbuild"
   },
   "dependencies": {
