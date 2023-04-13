@@ -1,5 +1,11 @@
 # create-de
 
+## 0.0.6
+
+### Patch Changes
+
+- add git init
+
 ## 0.0.5
 
 ### Patch Changes
