@@ -1,28 +1,31 @@
 {
   "name": "template-next-app-ts",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint . --ignore-path .gitignore",
-    "lint:fix": "next lint . --fix --ignore-path .gitignore"
+    "lint:fix": "next lint --fix . --ignore-path .gitignore"
   },
   "dependencies": {
-    "@types/node": "18.15.10",
-    "@types/react": "18.0.29",
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.35",
     "@types/react-dom": "18.0.11",
-    "eslint": "8.36.0",
-    "eslint-config-next": "13.2.4",
-    "next": "13.2.4",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.38.0",
+    "eslint-config-next": "13.3.0",
+    "next": "13.3.0",
+    "postcss": "8.4.21",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "5.0.2"
+    "tailwindcss": "3.3.1",
+    "typescript": "5.0.4"
   },
   "devDependencies": {
-    "@debbl/eslint-config-prettier": "^0.0.36",
-    "@debbl/eslint-config-react": "^0.0.36",
-    "eslint-define-config": "^1.17.0"
+    "@debbl/eslint-config-prettier": "^0.0.38",
+    "@debbl/eslint-config-react": "^0.0.38",
+    "@debbl/eslint-config-tailwindcss": "^0.0.38"
   }
 }
