@@ -2,7 +2,7 @@ import path from "node:path";
 import fs from "node:fs";
 import { fileURLToPath } from "node:url";
 import minimist from "minimist";
-import { bgGray, blue, bold, cyan, dim, green, lightGray, red, reset } from "kolorist";
+import { blue, cyan, green, lightGray, red, reset } from "kolorist";
 import prompts from "prompts";
 import {
   copy,
