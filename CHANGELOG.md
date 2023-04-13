@@ -1,5 +1,11 @@
 # create-de
 
+## 0.0.9
+
+### Patch Changes
+
+- change license
+
 ## 0.0.8
 
 ### Patch Changes

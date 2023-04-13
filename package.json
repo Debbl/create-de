@@ -1,11 +1,12 @@
 {
   "name": "create-de",
   "type": "module",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "packageManager": "pnpm@8.2.0",
   "description": "",
   "author": "Debbl <me@aiwna.run>(https://github.com/Debbl/)",
-  "license": "ISC",
+  "license": "MIT",
+  "homepage": "https://github.com/Debbl/create-de",
   "keywords": [],
   "main": "index.js",
   "bin": {
