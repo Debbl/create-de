@@ -11,16 +11,16 @@
     "lint:fix": "eslint . --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "vue": "^3.2.47"
+    "vue": "^3.3.4"
   },
   "devDependencies": {
-    "@debbl/eslint-config-prettier": "^0.0.36",
-    "@debbl/eslint-config-vue": "^0.0.36",
-    "@vitejs/plugin-vue": "^4.1.0",
-    "eslint": "^8.36.0",
-    "eslint-define-config": "^1.17.0",
-    "typescript": "^4.9.3",
-    "vite": "^4.2.0",
-    "vue-tsc": "^1.2.0"
+    "@debbl/eslint-config-prettier": "^0.0.45",
+    "@debbl/eslint-config-vue": "^0.0.45",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "eslint": "^8.42.0",
+    "eslint-define-config": "^1.20.0",
+    "typescript": "^4.9.5",
+    "vite": "^4.2.3",
+    "vue-tsc": "^1.6.5"
   }
 }
