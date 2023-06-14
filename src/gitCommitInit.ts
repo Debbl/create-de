@@ -1,4 +1,4 @@
-import { execSync } from "child_process";
+import { execSync } from "node:child_process";
 
 export default function gitCommitInit(execPath: string) {
   const execSyncGit = (command: string) => {
