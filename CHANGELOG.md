@@ -1,5 +1,11 @@
 # create-de
 
+## 0.0.10
+
+### Patch Changes
+
+- add solid template
+
 ## 0.0.9
 
 ### Patch Changes
