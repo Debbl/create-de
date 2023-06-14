@@ -20,3 +20,7 @@
 
 - vue
 - typescript
+
+## solid
+
+- typescript + tailwindcss
