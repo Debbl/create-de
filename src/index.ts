@@ -2,7 +2,7 @@ import path from "node:path";
 import fs from "node:fs";
 import { fileURLToPath } from "node:url";
 import minimist from "minimist";
-import { blue, cyan, green, lightGray, red, reset } from "kolorist";
+import { bgBlue, blue, cyan, green, lightGray, red, reset  } from "kolorist";
 import prompts from "prompts";
 import {
   copy,
@@ -65,6 +65,18 @@ const FRAMEWORKS: Framework[] = [
       },
     ],
   },
+  {
+    name: "solid",
+    display: "Solid",
+    color: blue,
+    variants: [
+      {
+        name: "solid-ts-tailwindcss",
+        display: "Typescript + Tailwindcss",
+        color: blue
+      }
+    ]
+  }
 ];
 
 const TEMPLATES = FRAMEWORKS.map(
