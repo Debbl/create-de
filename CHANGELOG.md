@@ -1,5 +1,11 @@
 # create-de
 
+## 0.0.11
+
+### Patch Changes
+
+- feat(next-ts): update
+
 ## 0.0.10
 
 ### Patch Changes
