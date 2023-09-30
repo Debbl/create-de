@@ -2,7 +2,7 @@ import path from "node:path";
 import fs from "node:fs";
 import { fileURLToPath } from "node:url";
 import minimist from "minimist";
-import { bgBlue, blue, cyan, green, lightGray, red, reset  } from "kolorist";
+import { blue, cyan, green, lightGray, red, reset } from "kolorist";
 import prompts from "prompts";
 import {
   copy,
@@ -48,7 +48,7 @@ const FRAMEWORKS: Framework[] = [
       },
       {
         name: "next-app-ts",
-        display: "Next-ts",
+        display: "Next-Ts",
         color: lightGray,
       },
     ],
@@ -73,10 +73,10 @@ const FRAMEWORKS: Framework[] = [
       {
         name: "solid-ts-tailwindcss",
         display: "Typescript + Tailwindcss",
-        color: blue
-      }
-    ]
-  }
+        color: blue,
+      },
+    ],
+  },
 ];
 
 const TEMPLATES = FRAMEWORKS.map(
