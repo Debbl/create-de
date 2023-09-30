@@ -11,7 +11,7 @@
   "main": "index.js",
   "bin": {
     "create-de": "index.js",
-    "cda": "index.js"
+    "cde": "index.js"
   },
   "files": [
     "index.js",
