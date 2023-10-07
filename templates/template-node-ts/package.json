@@ -20,6 +20,8 @@
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --clean --dts",
     "test": "vitest run",
+    "lint": "eslint . --ignore-path .gitignore",
+    "lint:fix": "eslint . --fix --ignore-path .gitignore",
     "release": "npm run build && bumpp && npm publish"
   },
   "devDependencies": {
