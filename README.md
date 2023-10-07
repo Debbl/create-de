@@ -21,6 +21,11 @@
 - vue
 - typescript
 
+## node-ts
+- typescript
+- bumpp
+- changelogithub
+
 ## solid
 
 - typescript + tailwindcss
