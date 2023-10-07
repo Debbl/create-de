@@ -66,6 +66,18 @@ const FRAMEWORKS: Framework[] = [
     ],
   },
   {
+    name: "node",
+    display: "Node",
+    color: green,
+    variants: [
+      {
+        name: "node-ts",
+        display: "Node-Ts",
+        color: blue,
+      },
+    ],
+  },
+  {
     name: "solid",
     display: "Solid",
     color: blue,
