@@ -2,45 +2,59 @@
   "name": "create-de",
   "type": "module",
   "version": "0.0.15",
-  "packageManager": "pnpm@8.8.0",
-  "description": "",
+  "packageManager": "pnpm@10.6.1",
+  "description": "Create a new project with a template",
   "author": "Debbl <me@aiwna.run>(https://github.com/Debbl/)",
   "license": "MIT",
   "homepage": "https://github.com/Debbl/create-de",
-  "keywords": [],
+  "keywords": [
+    "create",
+    "cli",
+    "tool",
+    "create-tool",
+    "create-cli",
+    "starter-template"
+  ],
   "main": "index.js",
   "bin": {
-    "create-de": "index.js",
-    "cde": "index.js"
+    "create-de": "./bin/index.js",
+    "cde": "./bin/index.js"
   },
   "files": [
-    "index.js",
-    "templates",
+    "bin",
     "dist"
   ],
+  "engines": {
+    "node": ">=18.17.0"
+  },
   "scripts": {
-    "dev": "unbuild && node index.js",
-    "build": "unbuild",
+    "dev": "tsx src/cli.ts",
+    "build": "tsup",
     "publish": "changeset publish",
     "changeset": "changeset",
     "version": "changeset version",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
   },
   "dependencies": {
-    "kolorist": "^1.8.0",
-    "minimist": "^1.2.8",
-    "prompts": "^2.4.2"
+    "@clack/prompts": "^0.10.0",
+    "cac": "^6.7.14",
+    "consola": "^3.4.0",
+    "giget": "^2.0.0"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.26.2",
-    "@debbl/eslint-config-prettier": "^0.0.45",
-    "@debbl/eslint-config-ts": "^0.0.45",
-    "@types/minimist": "^1.2.3",
-    "@types/prompts": "^2.4.5",
-    "eslint": "^8.50.0",
-    "prettier": "^2.8.8",
-    "typescript": "^5.2.2",
-    "unbuild": "^1.2.1"
+    "@changesets/cli": "^2.28.1",
+    "@debbl/eslint-config": "^3.10.0",
+    "@types/minimist": "^1.2.5",
+    "@types/node": "^22.13.9",
+    "eslint": "^9.21.0",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }
