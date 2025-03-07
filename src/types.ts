@@ -1,6 +1,6 @@
 export interface Template {
   name: string;
-  color?: string;
+  color: string;
   children?: Template[];
   url: string;
   git?: {

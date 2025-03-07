@@ -1,6 +1,7 @@
 import path, { dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { intro, isCancel, select, spinner, text } from "@clack/prompts";
+import ansis from "ansis";
 import consola from "consola";
 import { downloadTemplate } from "giget";
 import config from "./config";
@@ -12,7 +13,7 @@ async function chooseTemplate(templates: Template[]) {
   const template = await select({
     message: "Choose a template",
     options: templates.map((t) => ({
-      label: t.name,
+      label: ansis.hex(t.color)(t.name),
       value: t,
     })),
   });
