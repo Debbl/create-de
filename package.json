@@ -30,6 +30,8 @@
   "scripts": {
     "dev": "tsx src/cli.ts",
     "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "echo \"Error: no test specified\"",
     "publish": "changeset publish",
     "changeset": "changeset",
     "version": "changeset version",
