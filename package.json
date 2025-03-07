@@ -4,7 +4,7 @@
   "version": "0.0.15",
   "packageManager": "pnpm@10.6.1",
   "description": "Create a new project with a template",
-  "author": "Debbl <me@aiwna.run>(https://github.com/Debbl/)",
+  "author": "Brendan Dash <me@aiwna.run>(https://github.com/Debbl/)",
   "license": "MIT",
   "homepage": "https://github.com/Debbl/create-de",
   "keywords": [
@@ -31,10 +31,8 @@
     "dev": "tsx src/cli.ts",
     "build": "tsup",
     "typecheck": "tsc --noEmit",
+    "release": "pnpm build && bumpp && pnpm publish",
     "test": "echo \"Error: no test specified\"",
-    "publish": "changeset publish",
-    "changeset": "changeset",
-    "version": "changeset version",
     "lint": "eslint",
     "lint:fix": "eslint --fix"
   },
@@ -50,7 +48,10 @@
     "@debbl/eslint-config": "^3.10.0",
     "@types/minimist": "^1.2.5",
     "@types/node": "^22.13.9",
+    "bumpp": "^10.0.3",
     "eslint": "^9.21.0",
+    "lint-staged": "^15.4.3",
+    "simple-git-hooks": "^2.11.1",
     "tsup": "^8.4.0",
     "tsx": "^4.19.3",
     "typescript": "^5.8.2"
@@ -59,5 +60,11 @@
     "onlyBuiltDependencies": [
       "esbuild"
     ]
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }

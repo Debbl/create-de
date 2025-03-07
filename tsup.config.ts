@@ -4,6 +4,6 @@ export default defineConfig({
   entry: ["./src/{index,cli}.ts"],
   format: ["esm"],
   target: "node18",
-  dts: true,
+  dts: false,
   clean: true,
 });
