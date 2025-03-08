@@ -1,5 +1,4 @@
-import path, { dirname } from "node:path";
-import { fileURLToPath } from "node:url";
+import path from "node:path";
 import { intro, isCancel, select, spinner, text } from "@clack/prompts";
 import ansis from "ansis";
 import consola from "consola";
@@ -7,7 +6,8 @@ import { downloadTemplate } from "giget";
 import config from "./config";
 import type { Template } from "./types";
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
+// eslint-disable-next-line n/prefer-global/process
+const cwd = process.cwd();
 
 async function chooseTemplate(templates: Template[]) {
   const template = await select({
@@ -34,7 +34,7 @@ async function create(template: Template) {
     throw new Error("Cancelled");
   }
 
-  const templatePath = path.join(__dirname, customName);
+  const templatePath = path.join(cwd, customName);
 
   const s = spinner();
 
@@ -45,7 +45,7 @@ async function create(template: Template) {
   });
   s.stop("Downloaded template finished");
 
-  const relativePath = path.relative(__dirname, templatePath);
+  const relativePath = path.relative(cwd, templatePath);
   consola.success(`Created project ${customName} at ${relativePath}\n`);
   consola.info(`cd ${relativePath}`);
 }
