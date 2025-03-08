@@ -17,8 +17,8 @@
   ],
   "main": "index.js",
   "bin": {
-    "create-de": "./bin/index.js",
-    "cde": "./bin/index.js"
+    "create-de": "./bin/create-de.js",
+    "cde": "./bin/create-de.js"
   },
   "files": [
     "bin",
