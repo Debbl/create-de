@@ -2,7 +2,7 @@
   "name": "create-de",
   "type": "module",
   "version": "1.0.2",
-  "packageManager": "pnpm@10.6.1",
+  "packageManager": "pnpm@10.14.0",
   "description": "Create a new project with a template",
   "author": "Brendan Dash <me@aiwna.run>(https://github.com/Debbl/)",
   "license": "MIT",
@@ -37,7 +37,7 @@
     "lint:fix": "eslint --fix"
   },
   "dependencies": {
-    "@clack/prompts": "^0.10.0",
+    "@clack/prompts": "^0.11.0",
     "ansis": "^3.17.0",
     "cac": "^6.7.14",
     "consola": "^3.4.0",
