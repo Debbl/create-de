@@ -2,7 +2,7 @@
   "name": "create-de",
   "type": "module",
   "version": "1.0.2",
-  "packageManager": "pnpm@10.14.0",
+  "packageManager": "pnpm@10.15.0",
   "description": "Create a new project with a template",
   "author": "Brendan Dash <me@aiwna.run>(https://github.com/Debbl/)",
   "license": "MIT",
