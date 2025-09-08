@@ -17,13 +17,18 @@ const config: Config = {
     },
     {
       name: "starter-next-app",
-      color: "#000000",
+      color: "#0a0a0a",
       url: "debbl/starter-next-app",
     },
     {
       name: "starter-electron-app",
       color: "#4285f4",
       url: "debbl/starter-electron-app",
+    },
+    {
+      name: "starter-sass",
+      color: "#cc6699",
+      url: "debbl/starter-sass",
     },
   ],
 };
