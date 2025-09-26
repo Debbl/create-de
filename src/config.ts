@@ -1,3 +1,3 @@
-import config from "./create.config";
+import config from './create.config'
 
-export default config;
+export default config

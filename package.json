@@ -2,7 +2,7 @@
   "name": "create-de",
   "type": "module",
   "version": "1.0.3",
-  "packageManager": "pnpm@10.15.1",
+  "packageManager": "pnpm@10.17.1",
   "description": "Create a new project with a template",
   "author": "Brendan Dash <me@aiwna.run>(https://github.com/Debbl/)",
   "license": "MIT",
@@ -38,28 +38,29 @@
   },
   "dependencies": {
     "@clack/prompts": "^0.11.0",
-    "ansis": "^4.0.0",
+    "ansis": "^4.1.0",
     "cac": "^6.7.14",
-    "consola": "^3.4.0",
+    "consola": "^3.4.2",
     "giget": "^2.0.0"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.28.1",
-    "@debbl/eslint-config": "^3.10.0",
+    "@changesets/cli": "^2.29.7",
+    "@debbl/eslint-config": "^3.12.2",
     "@types/minimist": "^1.2.5",
-    "@types/node": "^22.13.10",
-    "bumpp": "^10.0.3",
-    "eslint": "^9.22.0",
-    "lint-staged": "^16.0.0",
-    "simple-git-hooks": "^2.11.1",
-    "tsup": "^8.4.0",
-    "tsx": "^4.19.3",
-    "typescript": "^5.8.2"
+    "@types/node": "^24.5.2",
+    "bumpp": "^10.2.3",
+    "eslint": "^9.36.0",
+    "lint-staged": "^16.2.1",
+    "simple-git-hooks": "^2.13.1",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.2"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild",
-      "simple-git-hooks"
+      "simple-git-hooks",
+      "unrs-resolver"
     ]
   },
   "simple-git-hooks": {
