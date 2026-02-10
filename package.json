@@ -31,7 +31,7 @@
     "dev": "tsx src/cli.ts",
     "build": "tsup",
     "typecheck": "tsc --noEmit",
-    "release": "pnpm build && bumpp && pnpm publish",
+    "release": "bumpp",
     "test": "echo \"Error: no test specified\"",
     "lint": "eslint",
     "lint:fix": "eslint --fix"
