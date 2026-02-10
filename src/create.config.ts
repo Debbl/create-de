@@ -30,6 +30,11 @@ const config: Config = {
       color: '#cc6699',
       url: 'debbl/starter-sass',
     },
+    {
+      name: 'starter-worker',
+      color: '#e6873c',
+      url: 'debbl/starter-worker',
+    },
   ],
 }
 
