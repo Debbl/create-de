@@ -6,7 +6,12 @@
   "description": "Create a new project with a template",
   "author": "Brendan Dash <me@aiwna.run>(https://github.com/Debbl/)",
   "license": "MIT",
-  "homepage": "https://github.com/Debbl/create-de",
+  "homepage": "https://github.com/Debbl/create-de#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Debbl/create-de.git"
+  },
+  "bugs": "https://github.com/Debbl/create-de/issues",
   "keywords": [
     "create",
     "cli",
