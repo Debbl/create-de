@@ -1,7 +1,7 @@
 import { cac } from 'cac'
 import consola from 'consola'
-import { run } from '.'
 import { version } from '../package.json'
+import { run } from '.'
 
 const cli = cac('create-de')
 

@@ -35,6 +35,11 @@ const config: Config = {
       color: '#e6873c',
       url: 'debbl/starter-worker',
     },
+    {
+      name: 'starter-vinext-app',
+      color: '#D47B3D',
+      url: 'debbl/starter-vinext-app',
+    },
   ],
 }
 
